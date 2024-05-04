@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- Tag viewport agar tampilan bisa responsif-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Memanggil CSS Lokal-->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- Box Icon Library-> Kumpulan icon online -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Web Zaky</title>
+    </head>
+    <body>
+        <!--Header-->
+        <header class="l-header">
+            <!--Navbar-->
+            <nav class="nav bd-grid">
+                <!--Logo Web Dibagian Kiri-->
+                <div>
+                    <a href="#" class="nav__logo">Web Zaky</a>
+                </div>
+
+                <!--Menu Navbar dibagian kanan-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#project" class="nav__link">Project</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!--Button Humberger untuk Navbar-->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <!--Bagian Isi Web-->
+        <main class="l-main">
+            <!-- HOME -> Perkenalan Singkat dan Foto Profil -->
+            <section class="home " id="home">
+                <!--Kontainer Home-->
+                <div class="home__container bd-grid">
+                    <!--Gambar Profil di Bagian Home-->
+                    <div class="home__img">
+                        <!--Mengubah gambar dengan efek masker sehingga tampak seperti segitiga dengan sudut yang sangat tumpul-->
+                        <!--<svg> : Tempat menggambar verktor SVG-->
+                        <!--Viewbox : Mengatur posisi dan ukuran kotak svg-->
+                        <svg class="home__blob" viewBox="0 0 200 173" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!--Masker yang akan menutupi/memotong gambar-->
+                            <mask id="mask0" mask-type="alpha">
+                                <circle cx="90" cy="85" r="50" fill="white"/>
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <!--Tempat masker digunakan / Gambar yang akan di masking-->
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                <image class="home__blob-img" x="0" y="0" width="200" height="187" xlink:href="assets/img/zaky-bw.png"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <!-- Teks dan Button -->
+                    <div class="home__data">
+                        <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Zaky</span><br> Freelancer</h1>
+                        <a href="https://www.instagram.com/zakytfq/" class="button">Contact</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--About-> Porfil dan Layanan yang ditawarkan-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/zaky.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Saya Zaky</h2>
+                        <p class="about__text">Berpengalaman dalam pembuatan Augmented Reality (AR) dan Desain Grafis. Fokus pada media belajar dan infografis untuk konten media sosial.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--Project -> Portofolio yang telah dibangun -->
+            <section class="project section" id="project">
+                <h2 class="section-title">Project</h2>
+
+                <!--Tampilan projek dalam bentuk gambar-->
+                <div class="project__container bd-grid">
+                    <a href="https://drive.google.com/drive/u/1/folders/1treo044Zt9NZc8gT2o6iKwYIt1peb6CF" class="project__img">
+                        <img src="assets/img/project1.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/akibamatsuriptk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="project__img">
+                        <img src="assets/img/project2.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/akibamatsuriptk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="project__img">
+                        <img src="assets/img/project3.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/akibamatsuriptk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="project__img">
+                        <img src="assets/img/project4.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/akibamatsuriptk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="project__img">
+                        <img src="assets/img/project5.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/akibamatsuriptk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="project__img">
+                        <img src="assets/img/project6.png" alt="">
+                    </a>
+                </div>
+
+                <!--Tombol Untuk melihat projek lainnya-->
+                <div class="project__button">
+                    <a href="project.html" class="button">More</a>
+                </div>
+
+            </section>
+        </main>
+
+        <!--Footer -> Kontak -->
+        <footer class="footer">
+            <p class="footer__title" id="contact">Contact Me On</p>
+            <div class="footer__social">
+                <a href="https://www.instagram.com/zakytfq/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.linkedin.com/in/muhammad-zaky-taufiq-35a8112a3/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+        </footer>
+
+        <!--Mengakses JS lokal-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
